@@ -4,8 +4,12 @@ for running app_v2
    (hcho) ayan@ayan--Laptop-14-ec0xxx:~/Desktop/hcho_data/website$ pip install streamlit geopandas plotly shapely requests
 2. streamlit run app_v2.py
 
-For running downloader
+For running downloader and parser
 
 1. pip install netCDF4 numpy pandas requests tqdm
 
    python hcho_downloader.py
+
+for Vizualizer
+
+pip install pandas matplotlib
