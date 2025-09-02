@@ -64,13 +64,13 @@ def plot_time_series(df, title):
                              fill="tonexty",
                              fillcolor="rgba(135,206,250,0.3)",
                              name="Min-Max Range"))
-    fig.update_layout(title=title, height=400)
+    fig.update_layout(title=title, height=900)
     return fig
 
 def plot_histogram(df, title):
     fig = px.histogram(df, x="HCHO_Mean (DU)", nbins=30,
                        color_discrete_sequence=["green"])
-    fig.update_layout(title=title, height=400)
+    fig.update_layout(title=title, height=900)
     return fig
 
 def plot_rolling(df, title):
@@ -83,7 +83,7 @@ def plot_rolling(df, title):
     fig.add_trace(go.Scatter(x=df["date"], y=df["7day_MA"],
                              mode="lines", name="7-day Moving Avg",
                              line=dict(color="red", width=2)))
-    fig.update_layout(title=title, height=400)
+    fig.update_layout(title=title, height=900)
     return fig
 
 # --------------------
