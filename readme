@@ -1,12 +1,16 @@
 for running app_v2
 
+conda install -n hcho -c conda-forge streamlit -y      
+
+
+
 1. conda activate hcho
    (hcho) ayan@ayan--Laptop-14-ec0xxx:~/Desktop/hcho_data/website$ pip install streamlit geopandas plotly shapely requests
 2. streamlit run app_v2.py
 
 For running downloader and parser
 
-1. pip install netCDF4 numpy pandas requests tqdm
+1. pip3 install netCDF4 numpy pandas requests tqdm  geopandas plotly
 
    python hcho_downloader.py
 
